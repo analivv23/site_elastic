@@ -232,50 +232,7 @@
 </style>
 </head>
 <body>
- 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <a href="index.html" class="nav-logo">ELAS-<span>&lt;TIC&gt;</span></a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html" class="active">Início</a></li>
-    <li><a href="meninas-ti.html">Meninas no DS</a></li>
-    <li><a href="equipe.html">Equipe</a></li>
-    <li><a href="inscricao.html">Inscrição</a></li>
-  </ul>
-  <a href="inscricao.html" class="nav-cta">Inscreva-se grátis</a>
-  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
 
-<!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="hero-badge" style="display:inline-block;background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.28);color:#fff;padding:0.4rem 1.2rem;border-radius:50px;font-size:0.8rem;font-weight:600;letter-spacing:0.05em;margin-bottom:1.5rem">✦ Vagas limitadas · Gratuito</div>
-  <h1>Faça sua <span>inscrição</span></h1>
-  <p>Preencha o formulário abaixo para garantir sua vaga no ELAS-&lt;TIC&gt; 2026. Evento em agosto, gratuito para meninas até o 9º ano.</p>
-</section>
- 
-<!-- IMAGE TICKER -->
-<div class="text-ticker">
-  <div class="text-ticker-track">
-    <div class="ticker-item"><div class="dot"></div><strong>ELAS-&lt;TIC&gt; 2026</strong> — Sua carreira em TI começa aqui!</div>
-    <div class="ticker-item"><div class="dot"></div><strong>Café de Boas-Vindas</strong> para todas as participantes</div>
-    <div class="ticker-item"><div class="dot"></div><strong>Oficinas práticas</strong> de programação, design e IA</div>
-    <div class="ticker-item"><div class="dot"></div> <strong>Certificado UNICAMP/COTIL</strong> ao final do evento</div>
-    <div class="ticker-item"><div class="dot"></div> <strong>Agosto de 2026</strong> — Inscrições abertas!</div>
-    <div class="ticker-item"><div class="dot"></div> Para <strong>Um evento exclusivo para meninas até o 9º ano</strong> · entrada gratuita</div>
-    <div class="ticker-item"><div class="dot"></div><strong>UNICAMP · COTIL · DEEDUC · MCIO · Mudando Minha História</strong></div>
-    <!-- duplicados -->
-    <div class="ticker-item"><div class="dot"></div><strong>ELAS-&lt;TIC&gt; 2026</strong> — Sua carreira em TI começa aqui!</div>
-    <div class="ticker-item"><div class="dot"></div> <strong>Café de Boas-Vindas</strong> para todas as participantes</div>
-    <div class="ticker-item"><div class="dot"></div> <strong>Oficinas práticas</strong> de programação, design e IA</div>
-    <div class="ticker-item"><div class="dot"></div><strong>Certificado UNICAMP/COTIL</strong> ao final do evento</div>
-    <div class="ticker-item"><div class="dot"></div> <strong>Agosto de 2026</strong> — Inscrições abertas!</div>
-    <div class="ticker-item"><div class="dot"></div> Para <strong>meninas do 8º EF ao 3º EM</strong> · entrada gratuita</div>
-    <div class="ticker-item"><div class="dot"></div><strong>UNICAMP · COTIL · DEEDUC · MCIO · Mudando Minha História</strong></div>
-  </div>
-</div>
- 
 <!-- FORM PAGE WRAP -->
 <div class="form-page-wrap">
  
@@ -300,14 +257,19 @@
       <div class="step-circle" id="sc4">4</div>
       <div class="step-label" id="sl4">Confirmação</div>
     </div>
+    <div class="step-line" id="line4"></div>
+    <div class="step-node">
+      <div class="step-circle" id="sc5">5</div>
+      <div class="step-label" id="sl5">Autorização</div>
+    </div>
   </div>
- 
+
   <!-- FORM CARD -->
   <div class="form-card" id="formCard">
-    <div class="progress-bar-wrap"><div class="progress-bar" id="progressBar" style="width:25%"></div></div>
+    <div class="progress-bar-wrap"><div class="progress-bar" id="progressBar" style="width:20%"></div></div>
     <div class="form-card-header">
       <div class="form-card-title" id="panelTitle">👤 Dados Pessoais</div>
-      <div class="form-card-sub" id="panelSub">Passo 1 de 4 · Campos com * são obrigatórios</div>
+      <div class="form-card-sub" id="panelSub">Passo 1 de 5 · Campos com * são obrigatórios</div>
     </div>
  
     <!-- PANEL 1: DADOS PESSOAIS -->
@@ -494,7 +456,20 @@
         </div>
       </div>
     </div>
- 
+
+    <!-- PANEL 5: AUTORIZAÇÃO DOS RESPONSÁVEIS -->
+    <div class="form-card-body form-panel" id="panel5">
+      <div class="fg">
+        <div class="fgroup full">
+          <div class="fdivider"> Autorização dos responsáveis</div>
+          <p style="font-size:0.9rem;color:var(--texto-suave);line-height:1.7">
+            Como o ELAS-&lt;TIC&gt; é voltado a meninas menores de idade, será necessário o envio de uma autorização assinada pelos pais ou responsáveis legais para a participação no evento.
+            Em breve, esta etapa trará o modelo de autorização para download e o campo de envio do documento assinado (foto ou PDF).
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- SUCCESS SCREEN -->
     <div class="success-screen" id="successScreen">
       <div class="success-icon"></div>
@@ -523,26 +498,22 @@
   <div class="footer-links">
     <a href="index.html">Início</a>
     <a href="meninas-ti.html">Meninas na TI</a>
-    <a href="equipe.html">Equipe</a>
-    <a href="inscricao.html">Inscrição</a>
   </div>
   <p><strong>ELAS-&lt;TIC&gt; 2026</strong> · UNICAMP · COTIL</p>
   <p style="margin-top:0.4rem;opacity:0.5;font-size:0.78rem">Desenvolvido com 💜 pelo time ELAS-&lt;TIC&gt;</p>
 </footer>
  
 <script>
-// ---- HAMBURGER ----
-document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));
- 
 // ---- MULTI-STEP FORM ----
 let currentStep = 1;
-const totalSteps = 4;
- 
+const totalSteps = 5;
+
 const panelTitles = [
   ' Dados Pessoais',
   ' Dados Escolares',
   ' Áreas de Interesse',
-  ' Confirmação e Termos'
+  ' Confirmação e Termos',
+  ' Autorização dos Responsáveis'
 ];
  
 function updateUI(){
@@ -640,7 +611,7 @@ document.getElementById('btnNext').addEventListener('click', () => {
     // submit
     document.getElementById('formCard').querySelector('.progress-bar-wrap').style.display='none';
     document.getElementById('formCard').querySelector('.form-card-header').style.display='none';
-    for(let i=1;i<=4;i++) document.getElementById('panel'+i).style.display='none';
+    for(let i=1;i<=totalSteps;i++) document.getElementById('panel'+i).style.display='none';
     document.getElementById('formNav').style.display='none';
     document.getElementById('successScreen').classList.add('show');
     window.scrollTo({top:300,behavior:'smooth'});
