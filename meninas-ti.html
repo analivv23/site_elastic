@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Meninas na TI | ELAS-&lt;TIC&gt; 2026</title>
+<link rel="icon" type="image/png" href="img/logo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
 <style>
 /* ===== MENINAS NA TI PAGE ===== */
@@ -19,7 +21,7 @@
   background-size:26px 26px; pointer-events:none;
 }
 .page-hero h1 {
-  font-family:'Syne',sans-serif;
+  font-family:'MuseoModerno',sans-serif;
   font-size:clamp(2.5rem,7vw,5.5rem);
   font-weight:800; color:#fff; line-height:1;
   letter-spacing:-2px; margin-bottom:1rem; position:relative;
@@ -43,7 +45,7 @@
 }
 .stat-big { text-align:center; padding:0 1.5rem; }
 .stat-big-num {
-  font-family:'Syne',sans-serif; font-size:2.5rem; font-weight:800;
+  font-family:'MuseoModerno',sans-serif; font-size:2.5rem; font-weight:800;
   color:var(--amarelo); line-height:1;
 }
 .stat-big-label { font-size:0.82rem; color:rgba(255,255,255,0.65); margin-top:0.35rem; max-width:160px; }
@@ -63,11 +65,11 @@
   text-transform:uppercase; color:#ccc; margin-bottom:0.5rem;
 }
 .stigma-title {
-  font-family:'Syne',sans-serif; font-size:1rem; font-weight:700;
+  font-family:'MuseoModerno',sans-serif; font-size:1rem; font-weight:700;
   color:#999; text-decoration:line-through; margin-bottom:0.8rem;
 }
 .stigma-truth {
-  font-family:'Syne',sans-serif; font-size:1.05rem; font-weight:800;
+  font-family:'MuseoModerno',sans-serif; font-size:1.05rem; font-weight:800;
   color:var(--roxo-escuro); margin-bottom:0.6rem;
 }
 .stigma-body { font-size:0.88rem; color:var(--texto-suave); line-height:1.6; }
@@ -92,7 +94,7 @@
 }
 .woman-body { padding:1.5rem; }
 .woman-name {
-  font-family:'Syne',sans-serif; font-weight:800; font-size:1.05rem;
+  font-family:'MuseoModerno',sans-serif; font-weight:800; font-size:1.05rem;
   color:var(--roxo-escuro); margin-bottom:0.2rem;
 }
 .woman-area {
@@ -162,7 +164,7 @@
 }
 .aluna-card:hover .aluna-overlay, .aluna-card:focus-within .aluna-overlay { opacity:1; transform:translateY(0); }
 .aluna-name {
-  font-family:'Syne',sans-serif; font-weight:800; color:#fff;
+  font-family:'MuseoModerno',sans-serif; font-weight:800; color:#fff;
   font-size:1.05rem; margin-bottom:0.3rem;
 }
 .aluna-turma {
@@ -200,7 +202,7 @@
 
 /* SUBTÍTULOS (texto de apoio abaixo do title) */
 .section-subtitle {
-  font-family:'Syne',sans-serif;
+  font-family:'MuseoModerno',sans-serif;
   font-size:1.15rem; font-weight:700;
   color:var(--texto-suave);
   margin-bottom:1rem; line-height:1.4;
@@ -228,7 +230,7 @@
   border-radius:var(--radius-sm); margin-bottom:1rem; display:block;
 }
 .cotil-stat-num {
-  font-family:'Syne',sans-serif; font-size:1.1rem; font-weight:800;
+  font-family:'MuseoModerno',sans-serif; font-size:1.1rem; font-weight:800;
   color:var(--roxo-escuro); line-height:1.3; margin-bottom:0.5rem;
 }
 .cotil-stat-label { font-size:0.85rem; color:var(--texto-suave); line-height:1.5; }
@@ -244,13 +246,44 @@
   background-size:22px 22px;
 }
 .cta-band h2 {
-  font-family:'Syne',sans-serif; font-size:clamp(1.8rem,4vw,3rem);
+  font-family:'MuseoModerno',sans-serif; font-size:clamp(1.8rem,4vw,3rem);
   font-weight:800; color:#fff; margin-bottom:1rem; position:relative;
 }
 .cta-band p { color:rgba(255,255,255,0.8); margin-bottom:2rem; max-width:480px; margin-left:auto; margin-right:auto; position:relative; }
- 
+
+/* Seções com mais respiro (exceto o page-hero) */
+.section { padding:7.5rem 6vw; }
+
+/* CARROSSEL - MULHERES QUE MUDARAM A TI */
+.women-banner-carousel { margin-top:2.8rem; }
+.women-banner-carousel .carousel-item img {
+  display:block; width:100%; height:60vh;
+  object-fit:cover; border-radius:var(--radius);
+}
+.women-banner-carousel .carousel-caption {
+  left:8%; right:8%; bottom:2.2rem;
+  text-align:center;
+  background:rgba(61,0,64,0.55);
+  border-radius:var(--radius-sm);
+  padding:1.2rem 1.6rem;
+  backdrop-filter:blur(4px);
+}
+.women-banner-carousel .carousel-caption h5 {
+  font-family:'MuseoModerno',sans-serif; font-weight:800; font-size:1.4rem; color:#fff; margin-bottom:0.4rem;
+}
+.women-banner-carousel .carousel-caption p {
+  font-size:0.9rem; color:rgba(255,255,255,0.9); margin:0; line-height:1.5;
+}
+.women-banner-carousel .carousel-indicators [data-bs-target] { background-color:var(--rosa); }
+.women-banner-carousel .carousel-control-prev-icon,
+.women-banner-carousel .carousel-control-next-icon { filter:none; background-color:rgba(233,30,140,0.8); border-radius:50%; padding:1.2rem; background-size:50%; }
+
 @media(max-width:700px){
   .woman-card { min-width:250px; }
+  .section { padding:5rem 5vw; }
+  .women-banner-carousel .carousel-item img { height:40vh; }
+  .women-banner-carousel .carousel-caption h5 { font-size:1.1rem; }
+  .women-banner-carousel .carousel-caption p { font-size:0.8rem; }
 }
 </style>
 </head>
@@ -258,7 +291,7 @@
  
 <!-- NAVBAR -->
 <nav class="navbar">
-  <a href="index.html" class="nav-logo">ELAS-<span>&lt;TIC&gt;</span></a>
+  <a href="index.html" class="nav-logo"><img src="img/logo.png" alt="" class="nav-logo-img">ELAS-<span>&lt;TIC&gt;</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">Início</a></li>
     <li><a href="meninas-ti.html" class="active">Meninas no DS</a></li>
@@ -276,7 +309,7 @@
   <p>O curso de Desenvolvimento de Sistemas, não tem e nunca teve dono. Conheça as mulheres que moldaram o mundo digital e descubra por que o futuro da tecnologia é feminino.</p>
   <a href="#mulheres" class="btn btn-white" style="margin:0 auto">Descobrir →</a>
 </section>
- 
+
 <!-- IMAGE TICKER -->
 
 <!-- STATS -->
@@ -288,6 +321,93 @@
  
   </div>
 </div>
+
+<!-- CARROSSEL: MULHERES QUE MUDARAM A TI -->
+<section class="section">
+  <span class="section-tag">Inspire-se</span>
+  <h2 class="section-title">Mulheres que <span>mudaram a TI</span></h2>
+  <p class="section-body">Elas existiram, existem e provam que a tecnologia sempre foi delas também.</p>
+
+  <!-- Troque cada src por uma imagem horizontal (ex: img/mulheres/nome.jpg) -->
+  <div id="carouselMulheres" class="carousel slide women-banner-carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselMulheres" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselMulheres" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselMulheres" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselMulheres" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselMulheres" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselMulheres" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselMulheres" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carouselMulheres" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/mulheres/ada-lovelace.jpg" class="d-block w-100" alt="Ada Lovelace">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ada Lovelace</h5>
+          <p>Matemática · Escritora · 1815–1852 — considerada a primeira programadora da história, escreveu o primeiro algoritmo destinado a uma máquina.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/mulheres/grace-hopper.jpg" class="d-block w-100" alt="Grace Hopper">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Grace Hopper</h5>
+          <p>Almirante · Cientista da Computação · 1906–1992 — inventou o primeiro compilador e criou o COBOL, ainda usado em bancos hoje.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/mulheres/katherine-johnson.jpg" class="d-block w-100" alt="Katherine Johnson">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Katherine Johnson</h5>
+          <p>Matemática · NASA · 1918–2020 — seus cálculos foram essenciais para a corrida espacial e as missões orbitais da NASA.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/mulheres/radia-perlman.jpg" class="d-block w-100" alt="Radia Perlman">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Radia Perlman</h5>
+          <p>Engenheira de Redes · Inventora · 1951– — apelidada de "Mãe da Internet", criou o protocolo STP que torna as redes modernas possíveis.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/mulheres/hedy-lamarr.jpg" class="d-block w-100" alt="Hedy Lamarr">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Hedy Lamarr</h5>
+          <p>Atriz · Inventora · 1914–2000 — sua tecnologia de salto de frequência se tornou a base do Wi-Fi, GPS e Bluetooth modernos.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/mulheres/frances-allen.jpg" class="d-block w-100" alt="Frances Allen">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Frances Allen</h5>
+          <p>Cientista da Computação · IBM · 1932–2020 — primeira mulher a ganhar o Prêmio Turing, pioneira em compiladores e programação paralela.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/mulheres/fei-fei-li.jpg" class="d-block w-100" alt="Fei-Fei Li">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fei-Fei Li</h5>
+          <p>IA · Stanford · Google · 1976– — criou o ImageNet, dataset que revolucionou o deep learning e a visão computacional.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/mulheres/naomi-ceder.jpg" class="d-block w-100" alt="Naomi Ceder">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Naomi Ceder</h5>
+          <p>Comunidade Python · Séc. XXI — foi presidente da Python Software Foundation e é referência em diversidade na tecnologia aberta.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMulheres" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselMulheres" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+</section>
  
 <!-- QUEBRANDO O ESTIGMA -->
 <section class="section section--pale">
@@ -550,9 +670,10 @@
     <a href="meninas-ti.html">Meninas na TI</a>
   </div>
   <p><strong>ELAS-&lt;TIC&gt; 2026</strong> · UNICAMP · COTIL</p>
-  <p style="margin-top:0.4rem;opacity:0.5;font-size:0.78rem">Desenvolvido com 💜 pelo time ELAS-&lt;TIC&gt;</p>
+  <p style="margin-top:0.4rem;opacity:0.5;font-size:0.78rem">Desenvolvido com <span style="font-size:1.3em">♡</span> pelo time ELAS-&lt;TIC&gt;</p>
 </footer>
- 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 // Hamburger
 document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));

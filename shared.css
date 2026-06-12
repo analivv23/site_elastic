@@ -1,5 +1,5 @@
-/* ===== ELAS-<TIC> 2026 — Shared Styles ===== */
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap');
+﻿/* ===== ELAS-<TIC> 2026 — Shared Styles ===== */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;600;700;800&family=Outfit:wght@300;400;500;600&display=swap');
  
 :root {
   --rosa:        #e91e8c;
@@ -50,8 +50,12 @@ body {
   gap: 2rem;
 }
 .nav-logo {
-  font-family:'Syne',sans-serif; font-weight:800; font-size:1.3rem;
+  font-family:'MuseoModerno',sans-serif; font-weight:800; font-size:1.3rem;
   color:#fff; text-decoration:none; white-space:nowrap; flex-shrink:0;
+  display:flex; align-items:center; gap:0.5rem;
+}
+.nav-logo-img {
+  height:34px; width:auto; object-fit:contain; display:block;
 }
 .nav-logo span { color:var(--rosa-claro); }
 .nav-links {
@@ -154,14 +158,14 @@ body {
 .section--pale  { background:var(--rosa-pale); }
  
 .section-tag {
-  font-family:'Syne',sans-serif; font-size:0.75rem; font-weight:700;
+  font-family:'MuseoModerno',sans-serif; font-size:0.75rem; font-weight:700;
   letter-spacing:0.15em; text-transform:uppercase;
   color:var(--rosa); margin-bottom:0.7rem; display:block;
 }
 .section-tag--light { color:rgba(255,255,255,0.6); }
  
 .section-title {
-  font-family:'Syne',sans-serif;
+  font-family:'MuseoModerno',sans-serif;
   font-size:clamp(1.9rem,4vw,2.9rem); font-weight:800;
   line-height:1.1; color:var(--roxo-escuro); margin-bottom:1rem;
 }
@@ -179,7 +183,7 @@ body {
 .btn {
   display:inline-flex; align-items:center; gap:0.5rem;
   padding:0.8rem 2rem; border-radius:50px;
-  font-family:'Syne',sans-serif; font-weight:700; font-size:0.95rem;
+  font-family:'MuseoModerno',sans-serif; font-weight:700; font-size:0.95rem;
   text-decoration:none; cursor:pointer; border:2px solid transparent;
   transition:all 0.2s;
 }
@@ -263,7 +267,7 @@ body {
   width:100px; height:100px; border-radius:50%;
   background:var(--grad-main);
   display:flex; align-items:center; justify-content:center;
-  font-family:'Syne',sans-serif; font-size:1.8rem; font-weight:800;
+  font-family:'MuseoModerno',sans-serif; font-size:1.8rem; font-weight:800;
   color:#fff; border:3px solid transparent;
   transition:all 0.22s;
   box-shadow:var(--shadow-sm);
@@ -284,7 +288,7 @@ body {
   background:#fff; border-radius:24px; padding:2.8rem;
   box-shadow:var(--shadow-lg); border-top:5px solid var(--rosa);
 }
-.form-title { font-family:'Syne',sans-serif; font-size:1.45rem; font-weight:800; color:var(--roxo-escuro); margin-bottom:0.3rem; }
+.form-title { font-family:'MuseoModerno',sans-serif; font-size:1.45rem; font-weight:800; color:var(--roxo-escuro); margin-bottom:0.3rem; }
 .form-subtitle { font-size:0.88rem; color:#999; margin-bottom:1.8rem; }
 .form-step-bar { display:flex; gap:0.4rem; margin-bottom:2rem; }
 .form-step { flex:1; height:4px; border-radius:99px; background:#f0d4ea; }
@@ -307,7 +311,7 @@ body {
   background:#fff;
 }
 .form-divider {
-  font-family:'Syne',sans-serif; font-size:0.75rem; font-weight:700;
+  font-family:'MuseoModerno',sans-serif; font-size:0.75rem; font-weight:700;
   text-transform:uppercase; letter-spacing:0.1em; color:var(--rosa);
   margin:1.6rem 0 0.8rem; padding-bottom:0.5rem;
   border-bottom:1px solid #f0d4ea; grid-column:1/-1;
@@ -318,7 +322,7 @@ body {
 .checkbox-item span { font-size:0.88rem; color:var(--texto-suave); line-height:1.4; }
 .btn-submit {
   width:100%; background:var(--grad-main); color:#fff; border:none;
-  padding:1rem; border-radius:12px; font-family:'Syne',sans-serif;
+  padding:1rem; border-radius:12px; font-family:'MuseoModerno',sans-serif;
   font-weight:700; font-size:1rem; cursor:pointer; margin-top:1.5rem;
   transition:opacity 0.2s, transform 0.15s; grid-column:1/-1;
 }
